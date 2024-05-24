@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+* {
+    line-height: 28px;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #4a7d94, #bcd3dd);
+    font-family: "Open Sans", arial, sans-serif;
+    color: darkslategray;
+}
+
+.registration-box {
+    padding: 2em;
+    background: linear-gradient(to right, #4a7d94, #bcd3dd);
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    padding: .5em;
+}
+
+form {
+    max-width: 700px;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px #9CA3AF;
+    border-radius: 40px;
+}
+
+.input-group, select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    flex: 1;
+    margin-right: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input,
+button,
+select {
+    padding: 8px 16px;
+    width: 100%;
+    border: unset;
+    border-radius: 10px;
+    outline-color: #fe1493;
+    box-shadow: 0 0 5px #9CA3AF;
+}
+
+button {
+    background-color: rgb(64, 113, 204);
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+}
+
+button:hover {
+    transform: scale(1.1);
+}

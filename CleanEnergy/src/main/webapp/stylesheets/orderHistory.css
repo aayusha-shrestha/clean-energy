@@ -1,0 +1,46 @@
+.container_order {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.order-history {
+    margin-top: 10px;
+}
+
+.order-history-empty-message {
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+    line-height: 1.5;
+    text-align: center;
+    font-style: italic;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead th {
+    background-color: #dee9ee;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+tbody td {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f8fa;
+}
+.order-status{
+	text-align: center;
+}
+.order-PENDING{
+	color: #eaca00;
+}
+.order-DELIVERED{
+	color: #2a8723;
+}

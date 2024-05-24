@@ -1,0 +1,121 @@
+@charset "ISO-8859-1";
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    font-weight: 200;
+    background: linear-gradient(to right, #4a7d94, #bcd3dd);
+    text-align: center;
+    padding: 35px 88px;
+    color:rgba(255, 255, 255, 0.649);
+}
+
+@media (min-width: 769px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+    }
+}
+
+.footer__logo {
+    height: 40px;
+}
+
+.footer a{
+    color:rgba(255, 255, 255, 0.649);
+}
+
+.footer a:hover{
+    color:#28292b;
+}
+
+.footer__links-store li,
+.footer__links-useful li {
+    margin-bottom: 8px;
+}
+
+.footer__info p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer__subscription p{
+    margin-bottom: 3%;
+}
+
+.footer__info, 
+.footer__links-store, 
+.footer__links-useful, 
+.footer__subscription {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer__info h3, 
+.footer__links-store h3, 
+.footer__links-useful h3, 
+.footer__subscription h3{
+    margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+    .footer__info, 
+    .footer__links-store, 
+    .footer__links-useful, 
+    .footer__subscription {
+        margin-left: 20px;
+        width: 75%;
+    }
+}
+
+input[type=email] {
+    padding: 8px 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.footer__subscription-btn {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 12px;
+    padding: 9px 18px;
+    color: black;
+}
+
+.footer__subscription-btn:hover {
+    color: white;
+    background-color: #28292b;
+    transition: .3s;
+    cursor: pointer;
+}
+/* footer ends */

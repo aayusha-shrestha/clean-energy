@@ -1,0 +1,5 @@
+package util;
+
+public enum CartAction {
+	ADD_PRODUCT_TO_CART, REMOVE_PRODUCT, UPDATE_QTY_PRODUCT, CREATE_ORDER, TASK
+}

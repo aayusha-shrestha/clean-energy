@@ -1,0 +1,325 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css);
+
+/* for sign of login and dashboard end*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(to right, #4a7d94, #bcd3dd);
+  font-family: "Open Sans", arial, sans-serif;
+  color: darkslategray;
+}
+
+body.login {
+  background-color: white;
+  max-width: 500px;
+  margin: 10vh auto;
+  padding: 1em;
+  height: auto;
+}
+
+h2 {
+  color: white;
+  font-size: 9.5em; 
+  text-align: center;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #35a8dd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+.add-button:hover {
+  background-color: #341ade;
+}
+
+.warn {
+  color: blue;
+}
+
+/* header */
+header[role="banner"] {
+  background: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+header[role="banner"] h1 {
+  margin: 0;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+header[role="banner"] h1:before {
+  content: "\f248";
+  font-family: FontAwesome;
+  padding-right: 0.6em;
+  color: red;
+}
+
+header[role="banner"] .utilities {
+  width: 100%;
+  background: white;
+  color: #ddd;
+}
+
+header[role="banner"] .utilities li {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+header[role="banner"] .utilities li a {
+  padding: 0.7em;
+  display: block;
+}
+
+/* header */
+/* .utilities a:before {
+  content: "\f248";
+  font-family: FontAwesome;
+  padding-right: 0.6em;
+} */
+
+.users a:before {
+  content: "";
+}
+
+nav[role="navigation"] {
+  background: #2a3542;
+  color: #ddd;
+  /* icons */
+}
+
+nav[role="navigation"] li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+nav[role="navigation"] li a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  padding: 0.7em;
+}
+
+nav[role="navigation"] li a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+nav[role="navigation"] li a:before {
+  content: "\f248";
+  font-family: FontAwesome;
+  padding-right: 0.6em;
+}
+
+nav[role="navigation"] .dashboard a:before {
+  content: "";
+}
+
+nav[role="navigation"] .write a:before {
+  content: "";
+}
+
+nav[role="navigation"] .edit a:before {
+  content: "";
+}
+
+nav[role="navigation"] .comments a:before {
+  content: "";
+}
+
+nav[role="navigation"] .users a:before {
+  content: "";
+}
+
+/* current nav item */
+.current,
+.dashboard .dashboard a,
+.write .write a,
+.edit .edit a,
+.comments .comments a,
+.users .users a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* my account and login*
+.panel > h2,
+.panel > ul {
+  margin: 1rem;
+}
+
+/* typography */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 300;
+  margin: 0;
+}
+
+h2 {
+  color: #ff1a1a;
+}
+
+b {
+  color: lightsalmon;
+}
+
+.hint {
+  color: lightslategray;
+}
+
+/* end */
+
+header[role="banner"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  height: 75px;
+}
+
+header[role="banner"] .utilities {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  color: darkslategray;
+  width: auto;
+}
+
+header[role="banner"] .utilities li {
+  display: inline-block;
+}
+
+header[role="banner"] .utilities li a {
+  padding: 0.5em 1em;
+}
+
+nav[role="navigation"] {
+  position: fixed;
+  width: 200px;
+  top: 75px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* main panel product item ko design bigrinxa */
+main[role="main"] {
+  margin: 75px 0 40px 200px;
+}
+
+main[role="main"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*end*/
+
+/* product list */
+/*Attendance List serction  */
+.attendance {
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.attendance-list {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  display: inline-block; /* Added */
+}
+
+table thead tr {
+  color: #fff;
+  background: #4a7d94;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+/* Adjust the padding and margin for the buttons */
+.table .actions {
+  padding: 0;
+  margin: 0;
+}
+
+.table .actions button {
+  padding: 6px 10px; /* Adjust as needed */
+  margin-right: 5px; /* Adjust as needed */
+}
+
+.table .actions button:last-child {
+  margin-right: 0; /* Remove margin from the last button */
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background: #f3f3f3;
+}
+
+.table tbody tr.active {
+  font-weight: bold;
+  color: #4a7d94;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #4a7d94;
+}
+
+.table button {
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4a7d94;
+}
+
+.table button:hover {
+  background: #1298d6;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+/* Added CSS for flexbox layout */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,119 @@
+.container_cart {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.cart {
+	margin-top: 4px;
+	display: flex;
+	align-items: stretch;
+}
+
+.cart-left {
+	flex: 3;
+}
+
+.cart-right {
+	flex: 1;
+	padding-left: 20px;
+	background-color: #dee9ee;
+	padding: 20px;
+	text-align: center;
+	justify-content: center; 
+	 align-items: center;
+}
+
+.cart-right h2 {
+	font-size: 24px; 
+	margin-bottom: 20px;
+}
+
+.cart-right .total,.cart-empty-message {
+	font-size: 20px;
+	margin-bottom: 20px;
+	display: block; 
+	line-height: 1.5;
+	text-align: center;
+}
+.cart-empty-message {
+	font-style: italic;
+}
+.cart-item {
+	display: flex;
+	padding: 5px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.cart-item:nth-child(even) {
+    background-color: #f4f8fa;
+}
+
+.item-name {
+	flex: 2; 
+}
+
+.cart-item-col {
+	display: flex;
+	align-items: center;
+	padding-right: 2px;
+	justify-content: flex-start;
+}
+
+.item-image {
+	width: 80px;
+	margin-right: 20px;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+}
+
+button, .button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	cursor: pointer;
+}
+
+.item-qty {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	width: 20%;
+}
+.remove-btn{
+	border-radius: 20px;
+	border: 1px solid #4a7d94;
+	background-color: #4a7d94;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	cursor: pointer;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.checkout-btn {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.item-price span{ padding-right: 5px;}
