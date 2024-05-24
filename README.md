@@ -1,7 +1,7 @@
-Clean Energy__
+Clean Energy <br/>
 A dynamic web application for the exploration and purchase of home appliances built utilizing the MVC pattern for separation of concerns, and Java, JSP, and Servlets for dynamically generating content.
 
-Features__
+Features <br/>
 Login and Logout
 Registration for new users
 Session and Cookies Management
@@ -16,10 +16,10 @@ Admin Panel
 Addition of new products and updating the current product details
 Deletion of products
 
-Technologies Used__
-Frontend__
+Technologies Used <br/>
+Frontend <br/>
 HTML/CSS/JavaScript: For front-end development and enhancing user experience.
-Backend__
+Backend <br/>
 Java: Core programming language for application logic.
 JSP (Java Server Pages): For rendering dynamic web content.
 Servlets: To process client requests and manage application state.
